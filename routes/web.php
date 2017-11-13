@@ -77,8 +77,20 @@ Route::get('test', function () {
     dd($featuredPosts);
     */
 
+    /*
     $fourthPost=\App\Post::find(4);
     dd($fourthPost);
     $lastPost=\App\Post::orderBy('id','DESC')->first();
     dd($lastPost);
+    */
+
+    $comment = new \App\Comment();
+    $comment -> title = 'test title';
+    $comment -> content ='test content';
+    $comment -> save();
+
+    /*$post = \App\Post::find(1);
+    foreach ($post->comments as $comment){
+        echo $comment->content.'<br>';
+    }*/
 });

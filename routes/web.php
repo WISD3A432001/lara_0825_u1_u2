@@ -61,7 +61,10 @@ Route::get('test', function () {
     $post->save();
 */
 
+/*
     $post=\App\Post::find(1);
     $post->delete();
+*/
 
+    \App\Post::destroy(2);
 });

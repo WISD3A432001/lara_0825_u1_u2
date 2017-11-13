@@ -31,6 +31,11 @@ Route::get('test', function () {
     $post -> save();
 */
 
+/*
     $posts = \App\Post::all();
     dd($posts);
+*/
+
+    $post = \App\Post::find(2);
+    dd($post);
 });

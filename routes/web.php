@@ -16,8 +16,16 @@ Route::get('/', function () {
 });
 
 Route::get('test', function () {
+
+/*
 \App\Post::create([
     'title' => 'test title',
     'content' => 'test content',
 ]);
+*/
+
+    $post = new\App\Post();
+    $post -> title = 'test title';
+    $post -> content = 'test content';
+    $post -> save();
 });

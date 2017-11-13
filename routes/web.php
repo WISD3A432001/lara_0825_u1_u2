@@ -18,11 +18,11 @@ Route::get('/', function () {
 Route::get('test', function () {
 
 
-\App\Post::create([
+/*\App\Post::create([
     'title' => 'test title',
     'content' => 'test content',
 ]);
-
+*/
 
 /*
     $post = new\App\Post();
@@ -67,4 +67,6 @@ Route::get('test', function () {
 */
 
     //\App\Post::destroy(2);
+
+    \App\Post::destroy(3,5,7);
 });

@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', function () {
+Route::get('/test', function () {
 
-
-/*\App\Post::create([
+/*
+\App\Post::create([
     'title' => 'test title',
     'content' => 'test content',
 ]);
@@ -84,13 +84,15 @@ Route::get('test', function () {
     dd($lastPost);
     */
 
+/*
     $comment = new \App\Comment();
     $comment -> title = 'test title';
     $comment -> content ='test content';
     $comment -> save();
+*/
 
-    /*$post = \App\Post::find(1);
+    $post = \App\Post::find(1);
     foreach ($post->comments as $comment){
         echo $comment->content.'<br>';
-    }*/
+    }
 });
